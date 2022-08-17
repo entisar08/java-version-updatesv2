@@ -14,6 +14,19 @@ public class Main {
         printDoubled(items);
 
 
+        System.out.println("------------------------------------------------------");
+         FootballPlayer joe= new FootballPlayer("Joe");
+         BaseballPlayer pat=new BaseballPlayer("Pat");
+         SoccerPlayer beckham=new SoccerPlayer("Beckham");
+
+
+         //let us create a team
+         Team liverpool=new Team("Liverpool");// team is accepting any player instead of
+         liverpool.addPlayer(joe);
+         liverpool.addPlayer(pat);
+         liverpool.addPlayer(beckham);
+        System.out.println(liverpool);
+         //
 
 
 
