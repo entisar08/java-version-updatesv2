@@ -15,7 +15,7 @@ public class Team {
     public boolean addPlayer(Player player){
         if(members.contains(player)){
             System.out.println(player.getName() + "is already in the team");
-         
+
         return false;
         }else{
            members.add(player) ;
