@@ -3,8 +3,9 @@ package com.cydeo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Team<T> {//T means team is accepting certain type , it can be b f s
-
+public class Team<T extends Player> {//T means team is accepting certain type , it can be b f s
+// T sould only accept player and subclasses
+    // only classes extended from Player and subclasses
     private  String name ;
     private List<T>  members=new ArrayList<>();
 

@@ -21,9 +21,11 @@ public class Main {
 
 
          //let us create a team
-         Team liverpool=new Team("Liverpool");// team is accepting any player instead of
-         liverpool.addPlayer(joe);
-         liverpool.addPlayer(pat);
+         Team<SoccerPlayer> liverpool=new Team("Liverpool");// team is accepting any player instead of
+        // liverpool.addPlayer(joe);
+        //
+        //
+        // liverpool.addPlayer(pat);
          liverpool.addPlayer(beckham);
         System.out.println(liverpool);
          //
