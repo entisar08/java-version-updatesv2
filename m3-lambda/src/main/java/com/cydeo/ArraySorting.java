@@ -21,10 +21,7 @@ public class ArraySorting {
     }
 
 
-
-
-
-    private void sort(Sorting sorting) {
+   private void sort(Sorting sorting) {
 
         sorting.sort();
         //this will be excuted based on quick sort or bubble sort
