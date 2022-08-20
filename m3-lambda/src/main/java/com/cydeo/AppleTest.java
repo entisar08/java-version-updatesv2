@@ -15,15 +15,17 @@ public class AppleTest {
         inventory.add(new Apple(Color.GREEN,200));
         inventory.add(new Apple(Color.RED,50));
 //now we need to call the method and pass two objects of different implementation
-        List<Apple> heavyApple=filterAples(inventory, new AppleHeavyPredicate());
+        List<Apple> heavyApple=filterApples(inventory, new AppleHeavyPredicate());
         System.out.println(heavyApple);
-        List<Apple> greenApple=filterAples(inventory, new AppleGreenColorPredicate());
+        List<Apple> greenApple=filterApples(inventory, new AppleGreenColorPredicate());
         System.out.println(greenApple);
+        ApplePredicate weightApple = apple -> apple.getWeight()>200;
+        filterApples(inventory,weightApple);
 
 
     }
 //now create method to accept the two behaviors
-    public static List<Apple> filterAples(List<Apple> inventory, ApplePredicate applePredicate){
+    public static List<Apple> filterApples(List<Apple> inventory, ApplePredicate applePredicate){
         List <Apple> result= new ArrayList<>();
         for (Apple apple : inventory) {
             if (applePredicate.test(apple)){
