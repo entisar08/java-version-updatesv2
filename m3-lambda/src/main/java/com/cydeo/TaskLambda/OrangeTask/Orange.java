@@ -1,6 +1,7 @@
-package com.cydeo;
+package com.cydeo.TaskLambda.OrangeTask;
 
 
+import com.cydeo.Color;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
