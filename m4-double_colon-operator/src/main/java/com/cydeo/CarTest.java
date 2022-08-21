@@ -12,7 +12,7 @@ public class CarTest {
         Supplier<Car> c1 = () -> new Car();
         System.out.println(c1.get().getModel());
 
-        Supplier<Car> c2 = Car :: new;
+        Supplier<Car> c2 = Car :: new;//the compiler knows new car
         System.out.println(c2.get().getModel());
 
         //One Argument Constructor
