@@ -9,7 +9,7 @@ public class CarTest {
     public static void main(String[] args) {
 
         //Zero Argument Constructor
-        Supplier<Car> c1 = () -> new Car();
+        Supplier<Car> c1 = () -> new Car();//T get ()
         System.out.println(c1.get().getModel());
 
         Supplier<Car> c2 = Car :: new;//the compiler knows new car
