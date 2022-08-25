@@ -17,7 +17,7 @@ public class Team<T extends Player> {//T means team is accepting certain type , 
         return name;
     }
 
-    public boolean addPlayer(T player){
+    public boolean addPlayer(T player){//
         if(members.contains(player)){
             System.out.println( ((Player)player).getName() + "is already in the team");
 
