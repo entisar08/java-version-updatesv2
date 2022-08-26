@@ -24,8 +24,7 @@ public class Main {
         Stream<Course> myCourseStream = myCourses.stream();
 
         //Creating Stream Values
-        Stream<Integer> stream = Stream.of(1,2,3,4);
-
+        Stream<Integer> stream = Stream.of(1,2,3,4);//it can be objects as well as long as provide the type of the class
 
 
 

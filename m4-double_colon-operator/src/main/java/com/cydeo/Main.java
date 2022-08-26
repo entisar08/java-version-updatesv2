@@ -10,8 +10,8 @@ public class Main {
         Calculate s1 = (x,y) -> Calculator.findSum(x,y);
 
         //Reference to a Static Method
-        Calculate s2 = Calculator::findSum;
-        s2.calculate(10,20);
+        Calculate s2 = Calculator::findSum;//treat s2 as an instance of the interface
+        s2.calculate(10,20);//calculate is coming from the interface calculate
 
         //Reference to a instance method
         Calculator obj = new Calculator();

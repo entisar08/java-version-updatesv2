@@ -20,7 +20,7 @@ public class Main {
 
         Collections.sort(list, ((o1, o2) -> (o1 > o2) ? -1 : (o1 < o2) ? 1 : 0));
 
-        //Ascending order
+        //Ascending order Java implemented this method instead of the tow above approaches
         list.sort((o1, o2) -> o1.compareTo(o2));
         System.out.println(list);
 
